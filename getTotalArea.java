@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class getTotalArea{
-    public double getAllCircleArea(Circle [] list){
+    public static double getAllCircleArea(Circle [] list){
         double area = 0;
         for(int i = 0; i < list.length;i++){
             area += list[i].getArea();
@@ -9,7 +9,7 @@ public class getTotalArea{
         return area;
     }
 
-    public double getAllRectangleArea(ArrayList<Rectangle> list){
+    public static double getAllRectangleArea(ArrayList<Rectangle> list){
         double area = 0;
         for(int i = 0; i < list.size(); i++){
             area += list.get(i).getArea();
@@ -17,7 +17,7 @@ public class getTotalArea{
         return area;
     }
 
-    public double getAllTriangle(ArrayList<Triangle> list){
+    public static double getAllTriangle(ArrayList<Triangle> list){
         double area = 0;
         for(int i = 0; i < list.size(); i++){
             area += list.get(i).getArea();
